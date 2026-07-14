@@ -10,7 +10,7 @@ Add the package by git URL in Xcode (File → Add Package Dependencies…), or i
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/<org>/nexly-ios", from: "0.1.0")
+    .package(url: "https://github.com/<org>/nexly-ios", from: "1.0.0")
 ]
 ```
 
@@ -81,6 +81,17 @@ Nexly.setSessionId("checkout-flow-1")
 // Clear an override:
 Nexly.setVisitorId("")
 ```
+
+## Versioning
+
+This package's version tag is kept **in lockstep with the `@nexly/*` JS
+packages** in the `trackers` monorepo (`packages/core`, `packages/web`,
+`packages/react-native`, etc. — all released together via changesets). When
+those packages bump to e.g. `1.1.0`, this repo gets a matching `v1.1.0` tag
+once the wire-contract changes have been ported, so the version number alone
+tells you which JS release a given SDK build's behavior corresponds to. See
+`CHANGELOG.md` for what changed in each release and the `trackers` repo's
+`.cursor/rules/sdk-cross-platform-parity.mdc` for the porting policy.
 
 ## Development
 
