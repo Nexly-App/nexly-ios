@@ -10,7 +10,7 @@ Add the package by git URL in Xcode (File → Add Package Dependencies…), or i
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/<org>/nexly-ios", from: "1.0.0")
+    .package(url: "https://github.com/Nexly-App/nexly-ios", from: "1.0.0")
 ]
 ```
 
