@@ -39,8 +39,9 @@ starts engagement tracking (active seconds, a 60s heartbeat, and
 `autoEngagement: false` to opt out and call `Nexly.startEngagement()` /
 `Nexly.stopEngagement()` manually.
 
-Add `nexlyswift://device` to the app's **Allowed origins** in the Nexly
-dashboard so the collector accepts events from this SDK.
+Enable the **Mobile apps** channel for the app in the Nexly dashboard (SDK
+options in the setup wizard, or the Ingest settings tab later) so the
+collector accepts events from this SDK.
 
 ## Usage
 
